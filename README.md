@@ -1,2 +1,2 @@
 # Dashboard-design
-Dashboard design project from The Odin Project, mainly testing flex-box/grid skills 
+Dashboard design project from The Odin Project, mainly for practising flex-box/grid skills. 
