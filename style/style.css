@@ -8,6 +8,9 @@
     --secondary-text-color:#1B8864;
     --card-border-color:#AE0D7A;
     --card-header-bg-color:#FDFBF7;
+    --primary-font-size:1.4rem;
+    --secondary-font-size:1.1rem;
+    --third-font-size:0.9rem;
 }
 
 *{
@@ -46,13 +49,23 @@ i{
 .sidebar{
     grid-row:1/3;
     display: grid;
+    grid-template-columns: minmax(180px,1fr);
     row-gap: 50px;
     align-content: flex-start;
     background-color: var(--sidebar-btn-bg-color);
 }
+.menu,
+.aditional-menu{
+    position: sticky;
+    top:10px;
+}
+.aditional-menu{
+    top:216px;
+}
 .sidebar a,
 .logo{
     color: var(--sidebar-btn-text-color);
+    font-size: var(--primary-font-size);
 }
 
 .header{
@@ -66,6 +79,7 @@ i{
     display: grid;
     grid-template:repeat(2,1fr) / 3fr 1fr;
     background-color: var(--main-bg-color);
+    gap: 15px;
 }
 
 .search-bar{
@@ -78,6 +92,10 @@ i{
 .header div{
     background-color: var();
     color: black;
+    font-size: var(--secondary-font-size);
+}
+.user-greet .user-name{
+    font-size: var(--primary-font-size);
 }
 .search-bar .fa-user{
     font-size: 30px;
@@ -122,8 +140,8 @@ input[type="search"]{
     display: grid;
     align-items: center;
     justify-content: end;
-    column-gap: 5px;
-    grid-template-columns: repeat(3,minmax(100px,25%));
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(120px,25%));
 }
 
 .user-options button{
@@ -131,32 +149,42 @@ input[type="search"]{
     border-radius: 25px;
     background-color: var(--sidebar-btn-bg-color);
     color: var(--sidebar-btn-text-color);
+    font-size: var(--third-font-size);
 }
 
 .projects{
     grid-area: 1 / 1 / 3 / 2;
+    
 }
 .projects h3,
 .announcements h3,
 .trending h3{
     color: var(--header-text-color);
+    font-size: var(--secondary-font-size);
 }
 .projects p,
 .announcements p,
 .trending p{
     color: var(--secondary-text-color);
+    font-size: var(--third-font-size);
 }
 .card,
 .announcements .card-container,
 .trending .card-container{
 background-color: var(--card-header-bg-color);
+border-radius: 8px;
+padding: 20px 10px;
 }
 
 .projects .card-container{
     display: grid;
     grid-template: 1fr / repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-
+.projects .card{
+    border-left: 8px solid var(--card-border-color);
+    
+}
 .announcements{
     grid-row:1/2;
 }
