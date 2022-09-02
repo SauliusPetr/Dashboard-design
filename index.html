@@ -1,14 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/82b4a6de2b.js" crossorigin="anonymous"></script>
     <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                Dashboard
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-id-card"></i>Profile</a></li>
+                    <li><a href=""><i class="fa-solid fa-id-card"></i></i>Messages</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a></li>
+                    <li><a href=""><i class="fa-solid fa-list"></i>Tasks</a></li>
+                    <li><a href=""><i class="fa-solid fa-people-group"></i>Communities</a></li>
+                </ul>
+            </div>
+            <div class="aditional-menu">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li><a href=""><i class="fa-solid fa-question"></i>Support</a></li>
+                    <li><a href=""><i class="fa-solid fa-lock"></i>Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="search-bar">
+                <label for="site-search"><i class="fa-solid fa-magnifying-glass" ></i></label>
+                <input type="search" id="site-search" name="querie">
+                <a href="#"><i class="fa-regular fa-bell"></i></a>
+                <i class="fa-solid fa-user"></i>
+                <a href="" class="user-icon">Morgan Oakley</a>
+            </div>
+            <div class="user-info">
+                <div class="user-greet">
+                    <i class="fa-solid fa-user user-icon"></i>
+                    <div class="greet">Hi there,</div>
+                    <div class="user-name">Morgan Oakley (@morgan)</div>
+                </div>
+                <div class="user-options">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="projects">
+                <h3>Your projects</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p>sdfsfsdf</p>
+                    </div>
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam architecto esse itaque ratione a expedita magni commodi atque? Expedita voluptatem nisi atque, voluptates saepe delectus numquam repellat perspiciatis veritatis minima!</p>
+                    </div>
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tempora hic quibusdam nesciunt possimus soluta veniam sit, nam, doloribus, consequatur obcaecati! Iure magnam placeat inventore voluptatum quam voluptates vitae doloribus?</p>
+                    </div>
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p>sdfsdfsdf</p>
+                    </div>
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p>sdfsdfs</p>
+                    </div>
+                    <div class="card">
+                        <h3>asd</h3>
+                        <p> Quia ad optio est perferendis doloremque modi cupiditate, atque error nostrum quod possimus adipisci libero odio numquam quis, a eos consequatur ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatum iure deleniti incidunt quibusdam recusandae, labore ex vero! Molestias dolorum unde tempore repellendus modi maxime qui dolorem praesentium laudantium quis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Site Info</h3>
+                        <p>some dummy-text lalaallallallalalalallaa</p>
+                    </div>
+                    <div class="card">
+                        <h3>More content</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, vel nihil. Omnis magni incidunt nam impedit, porro quidem voluptate commodi, architecto sequi non ratione odio possimus aperiam adipisci aliquid doloremque!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Another dummy title</h3>
+                        <p>Some more fdummy textaas ddddddddd ddddda snlk njnlakn sdlkasj dklajs dlkasj dlkasj dlkasjd   kasjdlk asjdl  allkjlk  kjk   kjkj kaasd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3>trending</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="user-icon fa-user"></i>
+                        <h3 class="user-name">@User-1</h3>
+                        <p class="project-title">Some project title</p>
+                    </div>
+                    <div class="card">
+                        <i class="user-icon"></i>
+                        <h3 class="user-name">@User-2</h3>
+                        <p class="project-title">Some project title</p>
+                    </div>
+                    <div class="card">
+                        <i class="user-icon"></i>
+                        <h3 class="user-name">@User-3</h3>
+                        <p class="project-title">Some project title</p>
+                    </div>
+                    <div class="card">
+                        <i class="user-icon"></i>
+                        <h3 class="user-name">@User-4</h3>
+                        <p class="project-title">Some project title</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
