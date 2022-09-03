@@ -58,7 +58,9 @@ i {
     color: var(--sidebar-btn-text-color);
     font-size: var(--primary-font-size);
 }
-
+.logo i{
+    font-size: 32px;
+}
 .items {
     display: grid;
     grid-template-columns: minmax(180px, 1fr);
@@ -94,7 +96,7 @@ i {
 }
 
 .search-bar .fa-user {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .user-greet .user-name {
