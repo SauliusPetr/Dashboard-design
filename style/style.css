@@ -214,13 +214,13 @@ input[type="search"] {
     transform: scale(0.97);
 }
 
-
 button:active{
     background-color: var(--secondary-text-color);
     transform: scale(0.97);
 }
 
-.projects .card:hover{
+.projects .card:hover,
+.projects .card:active{
     transform: scale(1.009);
     transition-duration: 0.2s;
     border-color: var(--sidebar-btn-bg-color);
